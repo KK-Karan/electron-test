@@ -1,0 +1,125 @@
+
+body{
+  background-color: #0f0f0f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+}
+
+h1 , h3 , h4 {
+  padding: 0;
+  margin:0;
+
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+
+
+.parent-container{
+   height:auto;
+   width: auto;
+   max-width: 1232px;
+   border: 1px solid white;
+   gap:16px;
+   display: flex;
+   justify-content: space-around;
+   flex-direction: row;
+   flex-wrap: wrap;
+   padding:16px;
+}
+
+
+.room-category{
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   width: 233px;
+   height: 290px;
+  overflow: hidden;
+
+}
+
+.category-intro{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  width: 233px;
+  height: 290px;
+  gap:8px;
+}
+
+.product-button{
+  width: 222px;
+  height: 56px;
+  background-color: white;
+  justify-content: center;
+  border-radius: 6px;
+
+}
+
+.category-button {
+  position: absolute;
+  width: fit-content;
+  height: 39px;
+  background-color: #0f0f0f;
+  opacity: 0.8;
+  color: white;
+  border-radius: 4px;
+  gap: 10px;
+  padding: 10px;
+  left: 20%;
+  bottom:5%;
+  transform:translateX(-45%);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.room-image{
+  transition: transform 0.3s ease;
+}
+
+.room-category:hover .room-image {
+  transform: scale(1.2);
+}
+
+.room-category:hover .category-button{
+  opacity: 0;
+  transform: translate(-50%, -20px);
+}
+
+
+
+
+.onhover-room{
+   position: absolute;
+   width: 160px;
+   height: 70px;
+   border-radius: 4px;
+   background-color: #0f0f0f;
+   opacity: 0.6;
+   color: white;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   left: 2%;
+   bottom:-27%;
+   padding:4px;
+   transition: opacity 1s ease, transform 1s ease;
+}
+
+.room-category:hover .onhover-room{
+   bottom: 0;
+   transform: translateY(-20%);
+
+}
+
+
